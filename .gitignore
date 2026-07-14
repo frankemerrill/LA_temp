@@ -1,0 +1,22 @@
+# Virtual environment
+.LA_temp_venv/
+LA_temp_venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+*# Jupyter notebooks
+.ipynb_checkpo*nts/
+
+# Environment variables
+.env*
+# Build files
+build/
+dist/
+
+# OS *iles
+.DS_Store
+Thumbs.db
