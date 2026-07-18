@@ -296,7 +296,7 @@ ax.axvline(
     color='black',
     linestyle='--',
     linewidth=2,
-    label='84°F'
+    label='83.5°F'
 )
 
 # Optionally shade the tail corresponding to P(T >= 84)
@@ -306,7 +306,7 @@ ax.fill_between(
     norm.pdf(x_tail, mu, sigma),
     alpha=0.3,
     color='red',
-    label=f'P(T ≥ 84) = {100*p_ge_84:.2f}%'
+    label=f'P(T ≥ 83.5) = {100*p_ge_84:.2f}%'
 )
 
 ax.set_xlabel("July Mean Max Temperature (°F)")
