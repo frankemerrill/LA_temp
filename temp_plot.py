@@ -219,32 +219,6 @@ plt.title("January Mean Low Temperature\n with Rolling Average")
 plt.grid(True)
 plt.legend()
 
-# Create histogram of July mean max temperatures
-plt.figure(figsize=(8, 6))
-
-plt.hist(
-    july_stats["JulyMeanMaxTemp"],
-    bins=20,           # adjust as desired
-    color="skyblue",
-    edgecolor="black",
-    alpha=0.7
-)
-
-# Add vertical line at 84°F
-plt.axvline(
-    x=84,
-    color="red",
-    linestyle="--",
-    linewidth=2,
-    label="84°F"
-)
-
-plt.xlabel("July Mean Max Temperature (°F)")
-plt.ylabel("Frequency")
-plt.title("Distribution of July Mean Max Temperatures")
-plt.legend()
-plt.grid(alpha=0.3)
-
 # --------------------------------------------------
 # Extract temperature values and remove NaNs if necessary
 # --------------------------------------------------
@@ -254,7 +228,7 @@ temps = july_stats["JulyMeanMaxTemp"].dropna()
 # Fit Gaussian (estimate mean and standard deviation)
 mu, sigma = norm.fit(temps)
 
-# Probability that temperature is >= 84 F
+# Probability that temperature is >= 83.5 F
 threshold = 83.5
 p_ge_84 = norm.sf(threshold, loc=mu, scale=sigma)  # survival function = 1 - CDF
 
