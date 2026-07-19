@@ -7,7 +7,7 @@ from scipy.stats import norm
 # --------------------------------------------------
 # Read temperature data
 # --------------------------------------------------
-# a comment line to make a new version to commit
+# a comment line to make a new version to commit -- it worked
 
 filename = "LA_Temp.csv"
 
