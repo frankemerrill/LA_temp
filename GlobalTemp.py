@@ -55,7 +55,7 @@ plt.plot(
 )
 
 plt.xlabel("Year")
-plt.ylabel("Global Mean Temperature (°C)")
+plt.ylabel("Global Mean Temperature (°F)")
 plt.title("Global Mean Surface Temperature (NASA GISTEMP)")
 plt.grid(True, alpha=0.3)
 
